@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randy S. Margulis - Buffalo Divorce & Family Lawyer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #1a3a5f;
+            --secondary: #2c5282;
+            --accent: #ffcc00;
+            --light: #f8f8f8;
+            --dark: #333;
+            --gray: #666;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles with Logo Integration */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-circle {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--accent);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .logo-circle .letter-m {
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--primary);
+            font-family: Georgia, serif;
+            line-height: 1;
+            margin-top: -4px;
+        }
+        
+        .logo-text h1 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: white;
+        }
+        
+        .logo-text p {
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            margin-top: 5px;
+            color: #e0e0e0;
+        }
+        
+        .contact-info {
+            text-align: right;
+        }
+        
+        .contact-info .phone {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--accent);
+        }
+        
+        .contact-info .consultation {
+            font-size: 14px;
+            font-weight: 300;
+            color: #e0e0e0;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: var(--secondary);
+            padding: 10px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            padding: 8px 5px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent);
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 58, 95, 0.85), rgba(26, 58, 95, 0.9)), url('https://www.randymargulis.com/wp-content/uploads/sites/8926/2019/06/Randy-Margulis_02.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 28px;
+            font-weight: 300;
+            margin-bottom: 40px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        .chat-btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--primary);
+            padding: 18px 40px;
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border: 2px solid var(--accent);
+        }
+        
+        .chat-btn:hover {
+            background-color: transparent;
+            color: var(--accent);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            text-align: center;
+            background-color: white;
+        }
+        
+        .section-title {
+            font-size: 36px;
+            color: var(--primary);
+            margin-bottom: 60px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .service-card {
+            background: var(--light);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            border-bottom: 4px solid var(--accent);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            background-color: var(--primary);
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .service-icon i {
+            font-size: 48px;
+            color: var(--accent);
+        }
+        
+        .service-content {
+            padding: 30px 25px;
+        }
+        
+        .service-content h3 {
+            font-size: 24px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .service-content p {
+            color: var(--gray);
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+        
+        .learn-more {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+        
+        .learn-more:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* About Section */
+        .about {
+            background-color: #f0f4f8;
+            padding: 100px 0;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-text h2 {
+            font-size: 36px;
+            color: var(--primary);
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .about-text h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent);
+        }
+        
+        .about-text p {
+            margin-bottom: 25px;
+            color: var(--gray);
+            font-size: 17px;
+            line-height: 1.8;
+        }
+        
+        .about-image {
+            border-radius: 8px;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+            background: url('https://www.randymargulis.com/wp-content/uploads/sites/8926/2019/06/Randy-Margulis_02.jpg') center/cover;
+        }
+        
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(26, 58, 95, 0.1), rgba(26, 58, 95, 0.5));
+        }
+        
+        .about-image-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        .about-image h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .about-image p {
+            font-size: 18px;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 100px 0;
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+        }
+        
+        .testimonials .section-title {
+            color: white;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: left;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .testimonial-card .quote {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        .client-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .client-info .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .client-info .name {
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #0d1f33;
+            color: white;
+            padding: 80px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 22px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--accent);
+            transform: translateX(5px);
+        }
+        
+        .contact-info-footer p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .contact-info-footer i {
+            margin-right: 15px;
+            color: var(--accent);
+            font-size: 18px;
+            min-width: 20px;
+            margin-top: 4px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--accent);
+            color: var(--primary);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 15px;
+            color: #aaa;
+            margin-top: 30px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                height: 350px;
+                order: -1;
+            }
+            
+            .hero h2 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 24px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .top-bar {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-container {
+                margin-bottom: 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-info {
+                text-align: center;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 8px 0;
+            }
+            
+            .hero {
+                padding: 80px 0;
+            }
+            
+            .hero h2 {
+                font-size: 28px;
+            }
+            
+            .hero p {
+                font-size: 20px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+        }
+        
+        /* Added smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Added section anchors */
+        .section-anchor {
+            position: relative;
+            top: -80px; /* Adjust based on header height */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header>
+        <div class="container">
+            <div class="top-bar">
+                <div class="logo-container">
+                    <div class="logo-circle">
+                        <div class="letter-m">M</div>
+                    </div>
+                    <div class="logo-text">
+                        <h1>RANDY S. MARGULIS</h1>
+                        <p>BUFFALO DIVORCE & FAMILY LAWYER</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="phone">716-886-9600</div>
+                    <div class="consultation">Call for a consultation. Video consultations also available.</div>
+                </div>
+            </div>
+        </div>
+        
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#attorney"><i class="fas fa-user-tie"></i> Attorney</a></li>
+                    <li><a href="#director"><i class="fas fa-briefcase"></i> Director</a></li>
+                    <li><a href="#mediation"><i class="fas fa-handshake"></i> Mediation</a></li>
+                    <li><a href="#paternity"><i class="fas fa-child"></i> Paternity</a></li>
+                    <li><a href="#family"><i class="fas fa-users"></i> Family</a></li>
+                    <li><a href="#reviews"><i class="fas fa-star"></i> Reviews</a></li>
+                    <li><a href="#newsletter"><i class="fas fa-newspaper"></i> Newsletter</a></li>
+                    <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Anchor for Home -->
+    <div id="home" class="section-anchor"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>ATTORNEYS SERVING BUFFALO & WESTERN NEW YORK</h2>
+                <p>SINCE 1993</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Legal Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Divorce</h3>
+                        <p>Comprehensive divorce services including contested, uncontested, and collaborative divorce proceedings. We guide you through every step with compassion and expertise.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Family Law</h3>
+                        <p>Expert legal guidance for all family matters including adoption, guardianship, prenuptial agreements, domestic violence, and domestic relations.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Child Custody</h3>
+                        <p>Protecting the best interests of your children with compassionate custody and support solutions. We help create parenting plans that work for your family.</p>
+                        <a href="#" class="learn-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anchor for Attorney -->
+    <div id="attorney" class="section-anchor"></div>
+    
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Randy S. Margulis</h2>
+                    <p>With over 30 years of experience in family law, Randy S. Margulis has established himself as a leading divorce and family lawyer in Buffalo and Western New York. His practice is dedicated to providing compassionate, yet assertive representation for clients facing challenging family law matters.</p>
+                    <p>Randy understands that family legal issues can be emotionally difficult. He approaches each case with sensitivity and professionalism, working diligently to achieve the best possible outcome for his clients and their families.</p>
+                    <p>Since founding his practice in 1993, Randy has helped thousands of clients navigate complex divorce, custody, and family law matters. His extensive courtroom experience and deep understanding of New York family law make him a trusted advocate for his clients.</p>
+                    <a href="#" class="learn-more">About Attorney</a>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-content">
+                        <h3>Randy S. Margulis</h3>
+                        <p>Experienced Family Law Attorney</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anchor for Reviews -->
+    <div id="reviews" class="section-anchor"></div>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="quote">
+                        "Randy handled my divorce with the utmost professionalism and care. He was always available to answer my questions and made a difficult process much more manageable."
+                    </div>
+                    <div class="client-info">
+                        <div class="avatar">SJ</div>
+                        <div class="name">Sarah Johnson</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote">
+                        "I was impressed with Randy's knowledge of family law. He fought for my parental rights and achieved a custody arrangement that works best for my children."
+                    </div>
+                    <div class="client-info">
+                        <div class="avatar">MR</div>
+                        <div class="name">Michael Roberts</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote">
+                        "After a difficult divorce, Randy helped me navigate the complex financial aspects. His attention to detail and strategic approach saved me thousands."
+                    </div>
+                    <div class="client-info">
+                        <div class="avatar">ED</div>
+                        <div class="name">Emily Davis</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anchor for Contact -->
+    <div id="contact" class="section-anchor"></div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#attorney"><i class="fas fa-chevron-right"></i> About Attorney</a></li>
+                        <li><a href="#reviews"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="#blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Practice Areas</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Divorce</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Child Custody</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Child Support</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Spousal Support</a></li>
+                        <li><a href="#paternity"><i class="fas fa-chevron-right"></i> Paternity</a></li>
+                        <li><a href="#mediation"><i class="fas fa-chevron-right"></i> Mediation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column contact-info-footer">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Buffalo, NY Office Location</p>
+                    <p><i class="fas fa-phone"></i> 716-886-9600</p>
+                    <p><i class="fas fa-envelope"></i> info@randymargulis.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:00 PM</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Randy S. Margulis. All Rights Reserved. | Serving Buffalo & Western New York Since 1993</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to handle scrolling for sections without anchors
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all navigation links
+            const navLinks = document.querySelectorAll('nav a');
+            
+            // Add click event listeners
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href').substring(1);
+                    
+                    // Skip search icon
+                    if(targetId === '') return;
+                    
+                    // Find the target element
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if(targetElement) {
+                        e.preventDefault();
+                        
+                        // Calculate offset position
+                        const headerHeight = document.querySelector('header').offsetHeight;
+                        const targetPosition = targetElement.offsetTop - headerHeight;
+                        
+                        // Smooth scroll
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+	<!-- Vapi Chat Widget -->
+<script>
+(function () {
+  const styles = `
+    <style>
+      #vapiToggleBtn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1000;
+        background-color: #5dfeaa;
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        color: #000;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+	#vapiToggleBtn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(139, 92, 246, 0.6);
+            gap: 15px;
+        }
+      #vapiChatOverlay {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        z-index: 999;
+        width: 360px;
+        max-height: 60vh;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        overflow: hidden;
+        font-family: sans-serif;
+        border: 1px solid #ddd;
+        flex-direction: column;
+      }
+ .chat-header {
+            background: linear-gradient(45deg, #1a2a6c, #b21f1f);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        
+        .chat-header-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .chat-header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .chat-header-text h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+        
+        .chat-header-text p {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+.close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .close-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: rotate(90deg);
+        }
+
+     #chatMessages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 15px;
+            background: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+.message {
+            max-width: 80%;
+            padding: 12px 15px;
+            border-radius: 18px;
+            position: relative;
+            animation: fadeInMsg 0.3s ease;
+            word-wrap: break-word;
+        }
+.vapi-assistant {
+            background: #e6f0ff;
+            color: #1a2a6c;
+            border-bottom-left-radius: 5px;
+            align-self: flex-start;
+        }
+        
+        .vapi-user {
+            background: #1a2a6c;
+            color: white;
+            border-bottom-right-radius: 5px;
+            align-self: flex-end;
+        }
+      #chatControls {
+        display: flex;
+        padding: 10px;
+        border-top: 1px solid #ddd;
+        gap: 10px;
+      }
+      #chatInput {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+     
+@keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInMsg {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+.welcome-message {
+            background: #e6f0ff;
+            color: #1a2a6c;
+            padding: 15px;
+            border-radius: 18px;
+            border-bottom-left-radius: 5px;
+            margin-bottom: 15px;
+            animation: fadeInMsg 0.5s ease;
+        }
+
+
+
+      #transcriptBox {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        width: 360px;
+        max-height: 60vh;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        overflow-y: auto;
+        padding: 10px;
+        font-family: sans-serif;
+        border: 1px solid #ddd;
+        z-index: 998;
+      }
+	.send-button {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            padding: 10px 10px;
+            background: linear-gradient(45deg, #6366f1, #8b5cf6, #d946ef);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+            transform: translateY(0);
+        }
+	.send-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(139, 92, 246, 0.6);
+            gap: 15px;
+        }
+	.send-button .icon {
+  		width: 16px;
+  		height: 16px;
+		filter: brightness(0) invert(1);
+	}
+#vapi-support-btn{
+		position: fixed;
+		
+        display: block;
+      }
+ .chat-popup {
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      padding: 20px;
+      width: 300px;
+      z-index: 1000;
+      display: none;
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    .chat-popup::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      right: 40px;
+      border-width: 10px 10px 0;
+      border-style: solid;
+      border-color: #333 transparent;
+      display: block;
+      width: 0;
+    }
+
+    .chat-popup img.agent-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      position: absolute;
+      top: -30px;
+      left: calc(50% - 30px);
+      border: 3px solid white;
+    }
+
+    .chat-popup .close-btn2 {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .chat-popup h3 {
+      margin-top: 30px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .chat-popup p {
+      font-size: 15px;
+      text-align: center;
+      margin: 10px 0 0;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+#phone {
+  color: white;
+  text-decoration: none; /* Optional: removes underline */
+}
+
+#phone:hover {
+  color: #ddd; /* Optional: light gray on hover */
+}
+
+    </style>
+  `;
+
+  const html = `
+    <button id="vapiToggleBtn">💬</button>
+    <div id="vapiChatOverlay">
+<div class="chat-header">
+            <div class="chat-header-content">
+                <img src="https://messenger.ngageics.com/ImageRetrievers/GeneralImage.aspx?websiteid=234-96-78-15-87-93-78-121&amp;imageHash=84E2BDBF7ED27DEA805112F2BBA9ACE2&amp;width=30&amp;height=30" alt="Chat Icon">
+                <div class="chat-header-text">
+                    <h2>AI Real-Time Assistant</h2>
+Or call me at <a id="phone" href="tel:7165759053">(716) 575-9053</a> <br> type: <i>voice</i> to switch to voice
+                </div>
+            </div>
+            <button class="close-btn" onclick="closeChatOverlay()">&times;</button>
+        </div>
+      <div id="chatMessages"> <div class="message vapi-assistant welcome-message">
+                Hello! I'm your AI assistant. How can I help you today?
+            </div></div>
+      <div id="chatControls">
+        <input type="text" id="chatInput" placeholder="Type your message..." />
+        <button class="send-button" onclick="sendChat()"> <span>Send</span>
+  <img src="https://digitalfootprints.app/paper-air.svg" alt="Send icon" class="icon"></button>
+      </div>
+    </div>
+    <div id="transcriptBox"></div>
+ <!-- Live Chat Popup -->
+  <div class="chat-popup" id="chatBox">
+    <img src="https://messenger.ngageics.com/ImageRetrievers/GeneralImage.aspx?websiteid=234-96-78-15-87-93-78-121&imageHash=84E2BDBF7ED27DEA805112F2BBA9ACE2&width=30&height=30" alt="Agent" class="agent-img">
+    <span class="close-btn2" onclick="closeChat()">×</span>
+    <h3>LIVE CHAT</h3>
+    <p>Your 24/7 AI Assistant is ready to help.</p>
+<!-- Moved the Vapi Button into the Chat Popup -->
+<br><i> Mic icon = voice call <br>Text bubble = text chat</i>
+
+  </div>
+  `;
+
+ 
+	
+	document.head.insertAdjacentHTML("beforeend", styles);
+  document.body.insertAdjacentHTML("beforeend", html);
+	 window.onload = function() {
+      document.getElementById("chatBox").style.display = "block";
+		 
+    };
+
+    
+
+  const assistantId = "956fda34-a421-499b-9116-7c251e6be1b8";
+  const apiKey = "972f3c4c-89cf-4ca3-91d9-468732895b04";
+  const webhookToolId = "00c96666-c5fa-4b48-8523-083b255c7c71";
+  const webhookUrl = "https://hook.us2.make.com/khka18x8gyvkxujk1xt70ug2m15qttbj"; //"https://hook.us2.make.com/e7s16ufdo3drbrbmrg1sngdmthmu98k1"; ///"https://hook.us2.make.com/khka18x8gyvkxujk1xt70ug2m15qttbj";   ////this is for the make.com for digitalfootprintsapp@gmail.com
+	const vapiBtnContainer = document.getElementById('vapi-support-btn');
+
+  let lastAssistantTranscript = "";
+  let isTextChat = false;
+  let vapiInstance = null;
+  let isCallActive = false;
+  let currentChatId = null;
+  const conversationHistory = [];
+
+  const buttonConfig = {
+  //position: "top-right", // "bottom" | "top" | "left" | "right" | "top-right" | "top-left" | "bottom-left" | "bottom-right"
+  offset: "40px", // decide how far the button should be from the edge
+  width: "45px", // min-width of the button
+  height: "45px", // height of the button
+  idle: { // button state when the call is not active.
+    color: `rgb(93, 254, 202)`, 
+    type: "round", //pill or "round"
+    title: "Have a quick question?", // only required in case of Pill
+    subtitle: "Talk with our AI assistant", // only required in case of pill
+    icon: `https://unpkg.com/lucide-static@0.321.0/icons/mic.svg`,
+  },
+  loading: { // button state when the call is connecting
+    color: `rgb(93, 124, 202)`,
+    type: "round", // or "round"
+    title: "Connecting...", // only required in case of Pill
+    subtitle: "Please wait", // only required in case of pill
+    icon: `https://unpkg.com/lucide-static@0.321.0/icons/loader-2.svg`,
+  },
+  active: { // button state when the call is in progress or active.
+    color: `rgb(255, 0, 0)`,
+    type: "round", // or "round"
+    title: "Call is in progress...", // only required in case of Pill
+    subtitle: "End the call.", // only required in case of pill
+    icon: `https://unpkg.com/lucide-static@0.321.0/icons/mic-off.svg`,
+  },
+}; // Modify this as required
+
+  document.getElementById("vapiToggleBtn").onclick = function () {
+    const overlay = document.getElementById("vapiChatOverlay");
+    //overlay.style.display = overlay.style.display === "none" ? "flex" : "none";
+	  overlay.style.display = overlay.style.display === "flex" ? "none" : "flex";
+	  const transcriptBox = document.getElementById("transcriptBox");
+  if (transcriptBox) transcriptBox.style.display = "none";
+	   const vapiBtnContainer = document.getElementById('vapi-support-btn');
+	
+      if (vapiBtnContainer) vapiBtnContainer.style.display = "none";
+	  closeChat();
+	  
+  };
+	
+	
+	
+
+  function appendChatMessage(text, sender = "user") {
+    const box = document.getElementById("chatMessages");
+    const messageDiv = document.createElement("div");
+            messageDiv.classList.add("message");
+            messageDiv.classList.add(sender === "assistant" ? "vapi-assistant" : "vapi-user");
+            messageDiv.textContent = text;
+            box.appendChild(messageDiv);
+    box.scrollTop = box.scrollHeight;
+    conversationHistory.push({ role: sender, content: text });
+  }
+	 // Helper function to toggle Vapi mic button visibility
+  function toggleVapiButton(show) {
+    const vapiBtnContainer = document.getElementById('vapi-support-btn');
+	
+      if (vapiBtnContainer) vapiBtnContainer.style.display = "block";
+   
+  }
+
+  window.sendChat = function () {
+    const inputEl = document.getElementById("chatInput");
+    const userMessage = inputEl.value.trim();
+    if (!userMessage) return;
+
+    appendChatMessage(userMessage, "user");
+    inputEl.value = "";
+
+    if (userMessage.toLowerCase() === "voice") {
+      const chatOverlay = document.getElementById("vapiChatOverlay");
+      if (chatOverlay) chatOverlay.style.display = "none";
+      const transcriptBox = document.getElementById("transcriptBox");
+      if (transcriptBox) transcriptBox.style.display = "block";
+		transcriptBox.innerHTML = '';
+		const prompt = document.createElement("p");
+		 
+    prompt.textContent = "Click the voice button (mic) to get started";
+    prompt.style.color = "gray";
+    prompt.style.textAlign = "center";
+    transcriptBox.appendChild(prompt);
+		// Show Vapi mic button when switching to voice
+      toggleVapiButton(true);
+      console.log("Switched to voice mode. Waiting for user to click the voice button.");
+      return;
+    }
+
+    const requestBody = {
+      assistantId,
+      input: userMessage,
+      ...(currentChatId && { previousChatId: currentChatId })
+    };
+
+    fetch("https://api.vapi.ai/chat", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer 9f4cc161-fe8c-4473-8e18-2079dc5b58fa`,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(requestBody)
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.id) currentChatId = data.id;
+        const responseText = data.output?.[0]?.content;
+        if (responseText) {
+          appendChatMessage(responseText, "assistant");
+          const normalized = responseText.toLowerCase();
+          const triggerPhrases = [
+            "thank you for that information",
+            "great! thank you for confirming",
+            "i've already collected your contact information",
+            "thanks again for contacting the law offices of randy margulis",
+            "we've got it",
+            "we'll be in touch shortly",
+            "i’ve sent your info"
+          ];
+          if (triggerPhrases.some(p => normalized.includes(p))) {
+            if (vapiInstance?.invokeToolFunction) {
+              vapiInstance.invokeToolFunction(webhookToolId);
+              appendChatMessage("Okay, we’ve sent your info. Thanks!", "assistant");
+            }
+            sendToMakeWebhook();
+          }
+        } else {
+          appendChatMessage("Sorry, no valid response received.", "assistant");
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        appendChatMessage("Error connecting to assistant.", "assistant");
+      });
+  };
+
+  function sendToMakeWebhook() {
+  const rawTranscript = conversationHistory.map(e => `${e.role}: ${e.content}`).join("\n");
+  const transcriptWithBreaks = rawTranscript.replace(/\n/g, "<br>");
+  const transcript = transcriptWithBreaks;
+
+  const extractNameFromContext = () => {
+    for (let i = 0; i < conversationHistory.length - 1; i++) {
+      const entry = conversationHistory[i];
+      const nextEntry = conversationHistory[i + 1];
+      if (
+        entry.role === "assistant" &&
+        /your name|may I have your name|can I get your name|full name/i.test(entry.content) &&
+        nextEntry.role === "user"
+      ) {
+        const match = nextEntry.content.match(/^([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)$/);
+        return match ? match[1] : nextEntry.content.trim();
+      }
+    }
+    return "";
+  };
+
+  const extractPhone = (text) => {
+    const match = text.match(/(?:\b|\D)(\d{3})[\s\-]?(\d{3})[\s\-]?(\d{4})(?:\b|\D)/);
+    return match ? `${match[1]}-${match[2]}-${match[3]}` : "";
+  };
+
+  const extractEmail = (text) => {
+    const match = text.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}/);
+    return match ? match[0] : "";
+  };
+
+  const extractLocationInfo = () => {
+    let isFromBuffalo = "unsure";
+    let city = "";
+    let state = "";
+    let zip = "";
+
+    for (let i = 0; i < conversationHistory.length - 1; i++) {
+      const entry = conversationHistory[i];
+      const nextEntry = conversationHistory[i + 1];
+
+      if (
+        entry.role === "assistant" &&
+        /are you located in or near buffalo or western new york\??$/i.test(entry.content)
+      ) {
+        const userReply = nextEntry?.content?.toLowerCase().trim();
+        if (userReply === "yes" || userReply.startsWith("yes")) {
+          isFromBuffalo = "yes";
+        } else if (userReply === "no") {
+          isFromBuffalo = "no";
+        }
+      }
+    }
+
+    const cityMatch = transcript.match(/\b(?:city|in|at|from)\s+([A-Z][a-z]+(?:\s[A-Z][a-z]+)*)\b/);
+    const stateMatch = transcript.match(/\b(NY|New York|PA|Pennsylvania|NJ|New Jersey|OH|Ohio)\b/i);
+    const zipMatch = transcript.match(/\b\d{5}(-\d{4})?\b/);
+
+    if (cityMatch) city = cityMatch[1];
+    if (stateMatch) state = stateMatch[0];
+    if (zipMatch) zip = zipMatch[0];
+
+    return { isFromBuffalo, city, state, zip };
+  };
+
+  const name = extractNameFromContext();
+  const phone = extractPhone(transcript);
+  const email = extractEmail(transcript);
+  const summary = "Submitted via text chat (no voice call)";
+  const pageUrl = window.location.href;
+  const referrerUrl = document.referrer;
+
+  const { isFromBuffalo, city, state, zip } = extractLocationInfo();
+
+  fetch(webhookUrl, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      full_name: name || "Not found",
+      phone: phone || "Not found",
+      email: email || "Not found",
+      call_summary: summary,
+      full_transcript: transcript,
+      source: "text-chat",
+      page_url: pageUrl,
+      referrer_url: referrerUrl,
+      city_is_buffalo_or_wny: isFromBuffalo,
+      ...(city && { city }),
+      ...(state && { state }),
+      ...(zip && { zip })
+    })
+  })
+    .then(() => {
+      appendChatMessage("Your information has been sent. Thank you!", "assistant");
+    })
+    .catch((err) => {
+      console.error("Webhook failed:", err);
+      appendChatMessage("There was an error sending your information.", "assistant");
+    });
+}
+
+  document.addEventListener("keydown", function (event) {
+    const chatInput = document.getElementById("chatInput");
+    if (document.activeElement === chatInput && event.key === "Enter") {
+      event.preventDefault();
+      sendChat();
+    }
+  });
+
+  const s = document.createElement("script");
+  s.src = "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
+  s.async = true;
+  s.onload = function () {
+ 
+  
+    vapiInstance = window.vapiSDK.run({
+      apiKey: apiKey,
+      assistant: assistantId,
+      config: buttonConfig,
+	container: vapiBtnContainer  // Mount button inside specific container
+    });
+
+    vapiInstance.on("call-start", () => {
+      isCallActive = true;
+const chatOverlay = document.getElementById("vapiChatOverlay");
+      if (chatOverlay) chatOverlay.style.display = "none";
+const transcriptBox = document.getElementById("transcriptBox");
+      if (transcriptBox) transcriptBox.style.display = "block";
+    });
+
+    vapiInstance.on("call-end", () => {
+      isCallActive = false;
+		const transcriptBox = document.getElementById("transcriptBox");
+  if (transcriptBox) transcriptBox.style.display = "none";
+    });
+
+    vapiInstance.on("message", (message) => {
+      if (message.type === "conversation-update") {
+        currentChatId = message.conversation.id;
+      }
+
+      if (message.type === "transcript") {
+        const role = message.role || "";
+        const transcript = message.transcript?.trim() || "";
+        const isPartial = message.transcriptType === "partial";
+
+        const box = document.getElementById("transcriptBox");
+        if (box) {
+          const p = document.createElement("p");
+          p.textContent = transcript;
+          p.style.color = role === "assistant" ? "#007bff" : "red";
+          p.style.textAlign = role === "assistant" ? "left" : "right";
+
+          const last = box.lastElementChild;
+          if (last && last.style.textAlign === p.style.textAlign && isPartial) {
+            box.removeChild(last);
+          }
+
+          box.appendChild(p);
+          box.scrollTop = box.scrollHeight;
+        }
+
+        if (role === "assistant" && !isPartial) {
+          lastAssistantTranscript = transcript;
+        }
+
+        if (role === "user" && transcript.toLowerCase().includes("switch to text") && !isTextChat) {
+          if (isCallActive && typeof vapiInstance.stop === "function") {
+            vapiInstance.stop();
+          }
+
+          isTextChat = true;
+          const chatOverlay = document.getElementById("vapiChatOverlay");
+          const transcriptBox = document.getElementById("transcriptBox");
+          if (chatOverlay) chatOverlay.style.display = "flex";
+          if (transcriptBox) transcriptBox.style.display = "none";
+
+          setTimeout(() => {
+            if (lastAssistantTranscript) {
+              appendChatMessage(lastAssistantTranscript, "assistant");
+              conversationHistory.push({
+                role: "assistant",
+                content: lastAssistantTranscript
+              });
+            }
+          }, 300);
+        }
+      }
+    });
+  };
+  document.body.appendChild(s);
+})();
+function closeChat() {
+      document.getElementById("chatBox").style.display = "none";
+    };
+function closeChatOverlay() {
+      document.getElementById("vapiChatOverlay").style.display = "none";
+    };
+</script>
+</body>
+</html>
